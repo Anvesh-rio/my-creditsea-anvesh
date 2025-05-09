@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Welcome from './components/Welcome/Welcome';
+import UserDashboard from './components/UserDashboard/UserDashboard';
+import AdminDashboard from './components/AdminDashboard/AdminDashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+
+        <Route
+          path="/userdashboard"
+          element={
+            <ProtectedRoute
+              element={<UserDashboard />}
+              allowedRole="user"
+            />
+          }
+        />
+
+        <Route
+          path="/admindashboard"
+          element={
+            <ProtectedRoute
+              element={<AdminDashboard />}
+              allowedRole="admin"
+            />
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Welcome from './components/Welcome/Welcome';
+// import UserDashboard from './components/UserDashboard/UserDashboard';
+// import AdminDashboard from './components/AdminDashboard/AdminDashboard';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Welcome />} />
+//         <Route path="/userdashboard" element={<UserDashboard />} />
+//         <Route path="/admindashboard" element={<AdminDashboard />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;

@@ -1,0 +1,184 @@
+/* Popup container */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup box */
+.popup-content {
+  background-color: white;
+  padding: 40px; /* Increased padding for more space */
+  border-radius: 8px;
+  width: 600px;  /* Increased width */
+  max-width: 90%; /* Ensures the popup is responsive */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  height: auto;  /* Set to auto to adjust based on content */
+  position: relative;
+}
+
+/* Title */
+.popup-title {
+  font-size: 1.8rem;  /* Increased font size for title */
+  margin-bottom: 20px; /* Increased margin */
+  text-align: center;
+}
+
+/* Input fields */
+.popup-input {
+  width: 100%;
+  padding: 12px;  /* Increased padding */
+  margin: 12px 0;  /* Increased margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Radio buttons container */
+.radio-container {
+  margin: 15px 0;  /* Increased margin */
+}
+
+/* Radio button label */
+.radio-label {
+  margin-right: 20px;  /* Increased space between radio buttons */
+  font-size: 1.1rem;  /* Slightly larger font */
+}
+
+/* Button styles */
+.popup-button {
+  width: 100%;
+  padding: 12px;  /* Increased padding */
+  font-size: 1.2rem;  /* Increased font size */
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.popup-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  margin: 30px;
+}
+
+/* Success message */
+.success-message {
+  color: green;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px; /* Increased margin */
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #000;
+}
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+form label p {
+  margin: 0 0 5px 2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.radio-container {
+  margin: 20px 0;
+}
+
+.radio-container p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.popup-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.popup-button:hover {
+  background-color: #1565c0;
+}

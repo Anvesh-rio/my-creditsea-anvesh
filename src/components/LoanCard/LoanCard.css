@@ -1,0 +1,30 @@
+.loan-card {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr 2fr;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  
+  .loan-officer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .officer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .status-badge {
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  

@@ -1,0 +1,103 @@
+.balance-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  width: 50%;
+}
+
+.main-cnt-of-userdashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-card {
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.balance-card h2 {
+  font-size: 20px;
+  margin: 4px 0 0;
+}
+
+.loan-button {
+  background-color: #6c8e7b;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.loan-button:hover {
+  background-color: #547466;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+
+.tab {
+  padding: 6px 12px;
+  margin: 0 6px;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab.active {
+  background-color: #005c4b;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.search-container input {
+  width: 600px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.loan-table {
+  background-color: white;
+  margin: 0 16px 24px;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  width: 60%;
+}
+
+.loan-table h3 {
+  margin-bottom: 12px;
+  color: #1c4035;
+  font-size: 16px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 2fr;
+  padding: 8px 0;
+  font-weight: 500;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}

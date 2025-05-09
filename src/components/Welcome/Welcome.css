@@ -1,0 +1,134 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main wrapper for the welcome page */
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 40px; /* Reduced padding-top to bring content closer */
+    color: #333;
+}
+
+/* Highlighted text styling */
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Role selection buttons container */
+.role-buttons {
+    margin-top: 20px;  /* Reduced margin for closer spacing */
+}
+
+/* Styling for the role buttons */
+.role-btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.role-btn:hover {
+    background-color: #0056b3;
+}
+
+.role-btn.active {
+    font-size: 18px;
+    background-color: #0056b3;
+    padding: 14px 28px;
+}
+
+.role-btn.inactive {
+    background-color: #cccccc;
+    color: #666;
+}
+
+/* User panel styling */
+.user-panel {
+    margin-top: 1.5rem; /* Reduced margin-top for closer spacing */
+}
+
+/* Styling for the large user button when clicked */
+.user-button-big {
+    font-size: 24px;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem; /* Reduced margin-bottom */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.user-button-big:hover {
+    background-color: #0056b3;
+}
+
+/* Form box for login/registration */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Reduced margin-top */
+}
+
+/* Input fields in the form */
+.form-box input {
+    margin: 8px 0;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for the submit button in form */
+.form-box button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #132E1A; /* Use the primary greenish color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #0d2314; /* Darken on hover */
+}
+
+/* Link for toggling between login and registration */
+.toggle-link {
+    margin-top: 12px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screen sizes */
+@media (max-width: 600px) {
+    .form-box input, .form-box button {
+        width: 90%; /* Make inputs and buttons more responsive */
+    }
+
+    .role-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
