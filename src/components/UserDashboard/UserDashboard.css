@@ -28,19 +28,47 @@
 }
 
 .loan-button {
-  background-color: #6c8e7b;
+  background: linear-gradient(135deg, #28a745, #218838);
   border: none;
   color: white;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+}
+
+.loan-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 70%);
+  animation: wave 2s infinite linear;
+  pointer-events: none;
 }
 
 .loan-button:hover {
-  background-color: #547466;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #28a745aa;
+  background: linear-gradient(135deg, #28a745, #1e7e34);
 }
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0);
+  }
+}
+
 
 .tabs {
   display: flex;
